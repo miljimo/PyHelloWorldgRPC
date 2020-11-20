@@ -1,0 +1,18 @@
+
+syntax = "proto3";
+
+package tutorials;
+
+service HelloServer{
+  
+  rpc get_message(HelloRequest) returns (HelloResponse);
+}
+
+
+message HelloRequest{
+  string message= 1;
+}
+
+message HelloResponse{
+ string reply= 1;
+}
